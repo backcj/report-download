@@ -1,0 +1,28 @@
+{
+  "name": "report-download",
+  "version": "0.0.1",
+  "description": "koa middleware",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --timeout 5000 --recursive",
+    "coverage:check": "istanbul check-coverage",
+    "lint": "eslint -c .eslintrc.yml .",
+    "mocha": "mocha -R spec --recursive --bail",
+    "test": "npm run lint && npm run coverage && npm run coverage:check"
+  },
+  "repository": "git+https://github.com/backcj/report-download.git",
+  "keywords": [
+    "xlsx",
+    "report"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/backcj/report-download.git/issues"
+  },
+  "homepage": "https://github.com/backcj/report-download.git#readme",
+  "devDependencies": {
+    "node-xlsx": "^0.12.1",
+    "eslint": "^4.1.1",
+    "mocha": "^3.4.2"
+  }
+}
