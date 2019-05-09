@@ -3,7 +3,7 @@
 ## Installation
 
 ```shell
-$ npm install --save report-download
+$ npm install --save report-export
 ```
 
 ## Usage：
