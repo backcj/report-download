@@ -19,7 +19,7 @@ const filename = 'filename'
 const tableHeader = ['title1', "title2"]
 const rowList = [['data', "data"], ['data', "data"]]
 const format = 'xlsx' // or 'csv' or 'json'
-ctx.state = {filename, tableHeader, rowList, format}
+ctx.state.$reportConfig = {filename, tableHeader, rowList, format}
 ```
 
 ## License

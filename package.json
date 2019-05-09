@@ -1,6 +1,6 @@
 {
   "name": "report-export",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "koa middleware",
   "main": "index.js",
   "scripts": {
@@ -20,8 +20,10 @@
     "url": "https://github.com/backcj/report-download.git/issues"
   },
   "homepage": "https://github.com/backcj/report-download.git#readme",
+  "dependencies": {
+    "node-xlsx": "^0.12.1"
+  },
   "devDependencies": {
-    "node-xlsx": "^0.12.1",
     "eslint": "^4.1.1",
     "mocha": "^3.4.2"
   }

@@ -6,7 +6,12 @@ exports.reportDownload = () => {
     await next()
 
     try {
-      const {filename, tableHeader, rowList, format = 'xlsx'} = ctx.state
+      const reportConfig = ctx.state.$reportConfig
+      if (!reportConfig) {
+        return
+      }
+
+      const {filename, tableHeader, rowList, format = 'xlsx'} = reportConfig
       if (!filename || !tableHeader || !rowList) {
         return
       }
@@ -46,7 +51,7 @@ exports.reportDownload = () => {
       })
       ctx.body = xlsxBuffer
     } catch (err) {
-      ctx.throw(401)
+      ctx.throw(500)
     }
   }
 }
