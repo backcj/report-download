@@ -1,9 +1,3 @@
-# find-ip-location
-  [![Build Status][travis-image]][travis-url]
-  [![AppVeyor branch][appveyor-image]][appveyor-url]
-  [![Coverage Status][coverage-image]][coverage-url]
-  [![NPM version][npm-image]][npm-url]
-
 用于报表下载的koa中间件
 
 ## Installation
