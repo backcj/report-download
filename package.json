@@ -1,5 +1,5 @@
 {
-  "name": "report-download",
+  "name": "report-export",
   "version": "0.0.1",
   "description": "koa middleware",
   "main": "index.js",

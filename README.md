@@ -10,7 +10,7 @@ $ npm install --save report-download
 
 ```javascript
 // router
-const downloadMiddleware = require('report-download')
+const downloadMiddleware = require('report-export')
 
 router.get('/download', downloadMiddleware.reportDownload(), downloadController)
 
