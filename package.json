@@ -1,14 +1,10 @@
 {
   "name": "report-export",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "koa middleware",
   "main": "index.js",
   "scripts": {
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --timeout 5000 --recursive",
-    "coverage:check": "istanbul check-coverage",
-    "lint": "eslint -c .eslintrc.yml .",
-    "mocha": "mocha -R spec --recursive --bail",
-    "test": "npm run lint && npm run coverage && npm run coverage:check"
+    "test": "nyc mocha --timeout=3000"
   },
   "repository": "git+https://github.com/backcj/report-download.git",
   "keywords": [
@@ -25,6 +21,9 @@
   },
   "devDependencies": {
     "eslint": "^4.1.1",
-    "mocha": "^3.4.2"
+    "koa": "^2.7.0",
+    "mocha": "^3.4.2",
+    "nyc": "^14.1.0",
+    "supertest": "^4.0.2"
   }
 }
